@@ -12,6 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel Previous Redundant Builds
+        uses: styfle/cancel-workflow-action
+        with: 
+          access_token: ${{ github.token }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 #Esto tomará el último commit
@@ -23,5 +27,7 @@ jobs:
       - name: Deploy main
         if: ${{ github.event_name == 'push' }}
         run: echo 'App deployment successfully'
+      - name: New change
+        run: echo "New change"
 
 
