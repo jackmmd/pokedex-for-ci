@@ -1,0 +1,18 @@
+#Nombre del workflow
+name: My workflow
+
+on:
+  push: 
+    branches: 
+      - main
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Ejecutando primer paso
+        run: |
+          echo 'Hola Duberly Mondragón'
+
+
+
