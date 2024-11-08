@@ -8,11 +8,12 @@ on:
 
 jobs:
   hello_world:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Ejecutando primer paso
         run: |
           echo 'Hola Duberly Mondragón'
+
 
 
 
