@@ -23,5 +23,7 @@ jobs:
       - name: Deploy main
         if: ${{ github.event_name == 'push' }}
         run: echo 'App deployment successfully'
+      - name: New change
+        run: echo "New change"
 
 
