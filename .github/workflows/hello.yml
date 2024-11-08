@@ -13,6 +13,13 @@ jobs:
       - name: Ejecutando primer paso
         run: |
           echo 'Hola Duberly Mondragón'
+        
+      - name: Dime la fecha
+        run: date
+      - run: ls -l
+      - run: whoami
+      - run: pwd
+        
 
 
 
